@@ -8,13 +8,11 @@ import Reset from './Reset';
 // Data
 import { board } from './data/board.json';
 
-// Objetivo
-const goal = 'HIJO';
-
-// Data procesada para la tabla
-const data = board.map((letter) => ({id: letter, status: null}));
-
 function Game() {
+    // Objetivo
+    const goal = 'HIJO';
+    // Data procesada para la tabla
+    const data = board.map((letter) => ({id: letter, status: null}));
     // Palabra seleccionada
     const [word, setWord] = useState([]);
     // Letras de la tabla
@@ -35,7 +33,7 @@ function Game() {
             validateLetter(letter);
         }
     }
-    const onReset = () => {handleClear()}
+    const onReset = () => {handleReset()}
     ///////////////////////////
     // Funciones auxiliares //
     ///////////////////////////
@@ -53,7 +51,7 @@ function Game() {
         // Actualizo objeto de letras
         setLetters(letters);
     }
-    function handleClear() {
+    function handleReset() {
         // Limpio objetos de palabras y letras
         setWord([]);
         setLetters(data);
