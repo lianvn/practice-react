@@ -1,4 +1,7 @@
-function Score() {
+function Score(props) {
+    // Propiedades
+    const {word, goal} = props;
+
     return (
         <div>Score</div>
     );
