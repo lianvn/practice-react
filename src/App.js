@@ -1,8 +1,10 @@
+import Game from './components/Game';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <Game />
     </div>
   );
 }
