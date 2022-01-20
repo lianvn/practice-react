@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Board from './Board';
 import Score from './Score'
 import Reset from './Reset';
+import Login from './Login';
 
 // Data
 import { board } from './data/board.json';
@@ -59,6 +60,7 @@ function Game() {
     return (
         <div>
             <h2>Guess the word!</h2>
+            <Login />
             <Board letters={letters}
                    onAdd={onAdd}/>
             <Score word={word}
