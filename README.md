@@ -1,7 +1,4 @@
-# Guess The Word
-Simple game where you should guess a word. Made with ReactJS.
-
-# How to start
+# Get started
 $ npm install \
 $ npm start
 
